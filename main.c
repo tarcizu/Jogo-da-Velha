@@ -31,6 +31,7 @@ Resultado(A1, A2, A3, A4, A5, A6, A7, A8, A9);
 
 while(0==0){
 system("cls");
+Logo();
 DesenharJogo(A1, A2, A3, A4, A5, A6, A7, A8, A9);
 int Token=0;
 if(c%2==1){    
@@ -126,31 +127,32 @@ break;
 
 
 }
+
 system("pause");
 }
 void DesenharJogo(int S1,int S2,int S3, int S4, int S5, int S6, int S7, int S8, int S9){
-printf("     |     |     \n  ");
-Marcar(S1);
+printf("\t\t\t\t     |     |     \n\t\t\t\t  ");
+Marcar(S1, 1);
 printf("  |  ");
-Marcar(S2);
+Marcar(S2, 2);
 printf("  |  ");
-Marcar(S3);
-printf("  \n_____|_____|_____\n     |     |     \n  ");
-Marcar(S4);
+Marcar(S3, 3);
+printf("  \n\t\t\t\t_____|_____|_____\n\t\t\t\t     |     |     \n\t\t\t\t  ");
+Marcar(S4, 4);
 printf("  |  ");
-Marcar(S5);
+Marcar(S5, 5);
 printf("  |  ");
-Marcar(S6);
-printf("  \n_____|_____|_____\n     |     |     \n  ");
-Marcar(S7);
+Marcar(S6, 6);
+printf("  \n\t\t\t\t_____|_____|_____\n\t\t\t\t     |     |     \n\t\t\t\t  ");
+Marcar(S7, 7);
 printf("  |  ");
-Marcar(S8);
+Marcar(S8, 8);
 printf("  |  ");
-Marcar(S9);
-printf("  \n     |     |     \n");
+Marcar(S9, 9);
+printf("  \n\t\t\t\t     |     |     \n\t\t\t");
 }
 
-void Marcar(int Simbolo){
+void Marcar(int Simbolo, int Numero){
 if(Simbolo==1){
     printf("X");
 }
@@ -159,7 +161,7 @@ else if (Simbolo==2){
 
  }
 else{
-    printf(" ");
+    printf("%d", Numero);
 }    
 }
 void Resultado(int S1,int S2,int S3, int S4, int S5, int S6, int S7, int S8, int S9){
@@ -222,5 +224,21 @@ exit(0);
 } 
 
 
+
+}
+void Logo(){
+
+printf("\n\t\t     ____.                          .___       \n");
+printf("\t\t    |    | ____   ____   ____     __| _/____   \n");
+printf("\t\t    |    |/  _ \\ / ___\\ /  _ \\   / __ |\\__  \\  \n");
+printf("\t\t/\\__|    (  <_> ) /_/  >  <_> ) / /_/ | / __ \\_\n");
+printf("\t\t\\________|\\____/\\___  / \\____/  \\____ |(____  /\n");
+printf("\t\t               /_____/               \\/     \\/ \n");
+printf("\t\t   ____   ____     .__  .__                    \n");
+printf("\t\t   \\   \\ /   /____ |  | |  |__ _____           \n");
+printf("\t\t    \\   Y   // __ \\|  | |  |  \\\\__  \\          \n");
+printf("\t\t     \\     /\\  ___/|  |_|   Y  \\/ __ \\_        \n");
+printf("\t\t      \\___/  \\___  >____/___|  (____  /        \n");
+printf("\t\t                 \\/          \\/     \\/         \n");
 
 }
