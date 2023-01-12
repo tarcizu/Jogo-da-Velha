@@ -4,9 +4,8 @@
 #include <windows.h>
 #include <string.h>
 #include <conio.h>
-// 2 - Painel de Controle
 
-// 3- Codigo
+// 2- Codigo
 void main()
 {
     int A1 = 0;
