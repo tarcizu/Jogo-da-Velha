@@ -4,10 +4,12 @@
 #include <windows.h>
 #include <string.h>
 #include <conio.h>
+#include <locale.h>
 
-// 2- Codigo
+// 2- Código 
 void main()
 {
+    setlocale(LC_ALL,"Portuguese");
     int A1 = 0;
     int A2 = 0;
     int A3 = 0;
