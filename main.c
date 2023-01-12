@@ -1,13 +1,12 @@
 // 1 - Bibliotecas
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 #include <windows.h>
 #include <string.h>
 #include <conio.h>
 // 2 - Painel de Controle
 
-// 3- Código
+// 3- Codigo
 void main()
 {
     int A1 = 0;
